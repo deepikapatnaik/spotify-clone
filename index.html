@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="logo"><img src="images/logo.png" alt="Spotify">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songlist">
+            <h2>Favorites !!</h2>
+            <div class="songitemcontainer">
+                <div class="songitem">
+                    <img src="images/song_cover.jpg" alt="1">
+                    <span>Kumkumala</span>
+                    <span class="songlistplay"><span class="duration">04:38 <i id="0" class="songitemplay fa-regular fa-circle-play"></i> </span></span>
+                </div>
+                <div class="songitem">
+                    <img src="images/song_cover.jpg" alt="1">
+                    <span>Maate Vinadhuga</span>
+                    <span class="songlistplay"><span class="duration">04:35 <i id="1" class="songitemplay fa-regular fa-circle-play"></i> </span></span>
+                </div>
+                <div class="songitem">
+                    <img src="images/song_cover.jpg" alt="1">
+                    <span>Nijame Ne Chebutunna</span>
+                    <span class="songlistplay"><span class="duration">03:35 <i id="2" class="songitemplay fa-regular fa-circle-play"></i> </span></span>
+                </div>
+                <div class="songitem">
+                    <img src="images/song_cover.jpg" alt="1">
+                    <span>Ninnu Chuse Anandamlo</span>
+                    <span class="songlistplay"><span class="duration">04:53 <i id="3" class="songitemplay fa-regular fa-circle-play"></i> </span></span>
+                </div>
+                <div class="songitem">
+                    <img src="images/song_cover.jpg" alt="1">
+                    <span>Samajavaragamana</span>
+                    <span class="songlistplay"><span class="duration">03:39 <i id="4" class="songitemplay fa-regular fa-circle-play"></i> </span></span>
+                </div>
+                <div class="songitem">
+                    <img src="images/song_cover.jpg" alt="1">
+                    <span>Yedurangula Vaana</span>
+                    <span class="songlistplay"><span class="duration">04:21 <i id="5" class="songitemplay fa-regular fa-circle-play"></i> </span></span>
+                </div>
+            </div>
+        </div>
+        <div class="song"></div>
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="myprogress" min="0" value="0" max="100">
+        <div class="icons">
+            <!--fontawesome icons-->
+            <i class="fa-solid fa-3x fa-backward-step" id="previous"></i>
+            <i class="fa-regular fa-3x fa-circle-play" id="masterplay"></i>
+            <i class="fa-solid fa-3x fa-forward-step" id="next"></i>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/057834e1fc.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

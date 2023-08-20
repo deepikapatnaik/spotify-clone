@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    background-color: rgb(70, 80, 80);
+    /*background-image: linear-gradient(to bottom right,rgb(70, 80, 80),rgb(82, 87, 87),rgb(94, 103, 103));*/
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Open Sans', sans-serif;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none;
+    height: 60px;
+    background-color: black;
+    color: white;
+}
+nav ul li{
+    padding: 0 12px;
+}
+.logo img{
+    width: 40px;
+    padding: 0 6px;
+}
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+.container{
+    min-height: 64vh;
+    background-color: rgb(29, 28, 30);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    width: 75%;
+    margin: 20px auto;
+    border-radius: 14px;
+    padding: 30px;
+    background-image: url('images/music_bg.jpg');
+    background-size: 100% 100%;
+}
+.bottom{
+    position: sticky;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color:white;
+    bottom: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icons{
+    margin-top: 15px;
+}
+.icons i{
+    cursor: pointer;
+}
+#myprogress{
+    width: 80vw;
+    text-align: center;
+    cursor: pointer;
+}
+.songitemcontainer{
+    margin-top: 35px;
+}
+.songitem{
+    /*height: 50px;*/
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(86, 167, 177);
+    color: black;
+    margin: 10px 0;
+    padding: 10px 5px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+}
+.songitem img{
+    width: 60px;
+    margin: 0 10px;
+    border-radius: 60px;
+}
+.duration{
+    margin: 0 20px;
+}
+.duration i{
+    cursor: pointer;
+}
+@media (max-width: 600px) {
+    .songitem{
+        flex-direction: column;
+    }
+}
